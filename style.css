@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background-color: #f5f1ea;
+  font-family: Georgia, serif;
+  color: #2b2b2b;
+}
+
+#slide1, #slide2, #slide3, #slide4 {
+  height: 100vh;
+  animation: aparecer 0.6s;
+}
+
+h1, h2 {
+  color: #c8102e;
+  text-align: center;
+  font-size: 36px;
+}
+
+.textoimagem {
+  display: flex;
+  height: 90%;
+  align-items: center;
+  gap: 20px;
+  padding: 0 40px;
+}
+
+#slide3 .textoimagem, #slide4 .textoimagem {
+  flex-direction: row-reverse;
+}
+
+.texto, .imagem {
+    width: 50%;
+    width: calc(50% - 10px);
+}
+
+.texto p {
+  font-size: 20px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 12px 28px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #c8102e;
+  color: white;
+}
+
+/************************************************************/
+/************************************************************/
+/************************************************************/
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
